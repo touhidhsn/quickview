@@ -4,7 +4,6 @@ import { useState } from "react";
 
 function Quick() {
   //for change image
-
   const [selectedImage, setSelectedImage] = useState("");
 
   //for active class on div selected
