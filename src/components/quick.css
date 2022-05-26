@@ -83,10 +83,6 @@
     background-color: black;
 }
 
-.grey.active {
-    box-shadow: 0 0 5px #000000;
-}
-
 .price {
     font-weight: bold;
     font-size: 18px;
