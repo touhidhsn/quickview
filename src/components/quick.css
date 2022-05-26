@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-    background-color: #0000003f;
+    background-color: #0000001b;
 }
 
 .card-quick {
@@ -21,11 +21,12 @@
 
 .card-row {
     flex: 1;
-    border: 1px solid lightblue;
 }
 
+
 .card-top img {
-    width: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 .card-bottom {
@@ -39,15 +40,21 @@
     box-shadow: 0 0 5px #000000;
     padding: 2px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card-bottom img {
+    transform: scale(1.02);
 }
 
 .div {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .title {
     letter-spacing: 2px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .category {
@@ -76,25 +83,119 @@
     background-color: black;
 }
 
+.grey.active {
+    box-shadow: 0 0 5px #000000;
+}
 
-.colors {
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.colors, .sizes {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
 .color {
-    width:  22px;
-    height: 22px;
+    width:  40px;
+    height: 40px;
     cursor: pointer;
     margin: 0 10px 0 0;
+    transition: all 0.5s;
 }
 
 .size {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darkblue;
     margin-top: 10px;
-    width:  22px;
-    height: 22px;
+    width:  40px;
+    height: 40px;
     cursor: pointer;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+.color:hover {
+    box-shadow: 0 0 5px #000000;
+}
+
+.size:hover {
+    box-shadow: 0 0 5px #000000;
+}
+
+.m.active {
+    box-shadow: 0 0 5px #000000;
+}
+
+.quantity {
+    padding: 2px 30px;
+    background-color: #00000011;
+    margin-top: 15px;
+    max-width: max-content;
+    margin-top: 20px;
+}
+
+.desc {
+    letter-spacing: 1.1px;
+
+}
+
+.fourth-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+button:active {
+    transform: translateY(-10px);
+}
+
+.cart {
+    background-color: rgb(86, 39, 255);
+    color: white; 
+}
+
+.wish {
+    background-color: rgb(86, 39, 255);
+    color: white; 
+}
+
+.cart:hover {
+    background-color: whitesmoke;
+    color: rgb(86, 39, 255); 
+}
+
+.wish:hover {
+    background-color: whitesmoke;
+    color: rgb(86, 39, 255); 
+}
+
+.back {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.5s;
+
+}
+
+.back:hover {
+    transform: translateY(-5px);
 }
